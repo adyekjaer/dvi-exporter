@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY dvi_exporter.py ./
+COPY output_mapping.json ./
 
-CMD [ "python", "./dvi-exporter.py" ]
+CMD [ "python", "./dvi_exporter.py" ]
