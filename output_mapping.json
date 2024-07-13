@@ -124,7 +124,7 @@
     "Heatmeter.kWh": {
       "name": "dvi_sensor_heat_meter_kwh",
       "description": "Heat meter energy consumption",
-      "type": "gauge"
+      "type": "counter"
     },
     "Powermeter.kW": {
       "name": "dvi_sensor_power_meter_kw",
