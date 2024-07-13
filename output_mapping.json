@@ -1,0 +1,286 @@
+{
+  "bestgreen": {
+    "Sensor.Date": {
+      "name": "dvi_bg_last_data_received",
+      "description": "Time and date for last data reception",
+      "type": "counter",
+      "convert": "timestamp",
+      "convert_format": "%Y-%m-%d %H:%M:%S"
+    },
+    "Powermeter.kW": {
+      "name": "dvi_bg_heatpump_power_consumption",
+      "description": "Heatpump power consumption",
+      "type": "gauge"
+    },
+    "Powermeter.kWh": {
+      "name": "dvi_bg_heatpump_energy_consumption",
+      "description": "Heatpump energy consumption",
+      "type": "counter"
+    },
+    "Heatpump.Error": {
+      "name": "dvi_bg_heatpump_error",
+      "description": "Heatpump error",
+      "type": "enum"
+    }
+  },
+  "sensor": {
+    "Sensor.Date": {
+      "name": "dvi_sensor_last_data_received",
+      "description": "Time and date for last data reception",
+      "type": "counter",
+      "convert": "timestamp",
+      "convert_format": "%Y-%m-%d %H:%M:%S"
+    },
+    "Centralheating.Forward": {
+      "name": "dvi_sensor_ch_forward",
+      "description": "Central heating forward",
+      "type": "gauge"
+    },
+    "Centralheating.Return": {
+      "name": "dvi_sensor_ch_return",
+      "description": "Central heating return ",
+      "type": "gauge"
+    },
+    "Storagetank.Hotwater": {
+      "name": "dvi_sensor_storagetank_hotwater",
+      "description": "Hotwater storagetank",
+      "type": "gauge"
+    },
+    "Roomtemperature": {
+      "name": "dvi_sensor_room_temperature",
+      "description": "Room Temperature",
+      "type": "gauge"
+    },
+    "Storagetank.Centralheating": {
+      "name": "dvi_sensor_storagetank_central_heating",
+      "description": "Central heating storagetank",
+      "type": "gauge"
+    },
+    "LV.Evaporator1": {
+      "name": "dvi_sensor_lv_evaporator_1",
+      "description": "LV Evaporator 1",
+      "type": "gauge"
+    },
+    "Outsidetemperature": {
+      "name": "dvi_sensor_outside_temperature",
+      "description": "Outside Temperature",
+      "type": "gauge"
+    },
+    "Energycatcher": {
+      "name": "dvi_sensor_energy_catcher",
+      "description": "Energy Catcher",
+      "type": "gauge"
+    },
+    "Solarheating": {
+      "name": "dvi_sensor_solar_heating",
+      "description": "Solar heating",
+      "type": "gauge"
+    },
+    "LV.Evaporator2": {
+      "name": "dvi_sensor_lv_evaporator_2",
+      "description": "LV Evaporator 2",
+      "type": "gauge"
+    },
+    "Highpressure": {
+      "name": "dvi_sensor_high_pressure",
+      "description": "High pressure",
+      "type": "gauge"
+    },
+    "Lowpressure": {
+      "name": "dvi_sensor_low_pressure",
+      "description": "Low pressure",
+      "type": "gauge"
+    },
+    "Brine.Return": {
+      "name": "dvi_sensor_brine_return",
+      "description": "Brine return",
+      "type": "gauge"
+    },
+    "Brine.Forward": {
+      "name": "dvi_sensor_brine_forward",
+      "description": "Brine forward",
+      "type": "gauge"
+    },
+    "Heatmeter.Flow": {
+      "name": "dvi_sensor_heat_meter_flow",
+      "description": "Heat meter flow",
+      "type": "gauge"
+    },
+    "Heatmeter.kW": {
+      "name": "dvi_sensor_heat_meter_kw",
+      "description": "Heat meter power consumption",
+      "type": "gauge"
+    },
+    "Heatmeter.Forward": {
+      "name": "dvi_sensor_heat_meter_forward",
+      "description": "Heat meter forward",
+      "type": "gauge"
+    },
+    "Heatmeter.Return": {
+      "name": "dvi_sensor_heat_meter_return",
+      "description": "Heat meter return",
+      "type": "gauge"
+    },
+    "Heatmeter.kWh": {
+      "name": "dvi_sensor_heat_meter_kwh",
+      "description": "Heat meter energy consumption",
+      "type": "gauge"
+    },
+    "Powermeter.kW": {
+      "name": "dvi_sensor_power_meter_kw",
+      "description": "Power meter power consumption",
+      "type": "gauge"
+    },
+    "Powermeter.kWh": {
+      "name": "dvi_sensor_power_meter_kwh",
+      "description": "Power meter energy consumption",
+      "type": "counter"
+    }
+  },
+  "timer": {
+    "compressor": {
+      "name": "dvi_timer_compressor",
+      "description": "Time spend on compressor",
+      "type": "counter"
+    },
+    "warmwater": {
+      "name": "dvi_timer_warm_water",
+      "description": "Time spend on warm water",
+      "type": "counter"
+    },
+    "pluswarm": {
+      "name": "dvi_timer_plus_warm",
+      "description": "Time spend on extra warm water heating",
+      "type": "counter"
+    },
+    "energicapture": {
+      "name": "dvi_timer_energy_capture",
+      "description": "Time spend on energy capture",
+      "type": "counter"
+    },
+    "sunwarm": {
+      "name": "dvi_timer_sun_warm",
+      "description": "Time spend on sun warming",
+      "type": "counter"
+    },
+    "suntoearth": {
+      "name": "dvi_timer_sun_to_eath",
+      "description": "Time spend on sun to earth",
+      "type": "counter"
+    },
+    "cooling": {
+      "name": "dvi_timer_cooling",
+      "description": "Time spend on cooling",
+      "type": "counter"
+    }
+  },
+  "relay": {
+    "Relay1": {
+      "name": "dvi_relay_relay_1",
+      "description": "Heatpump 4-way magnet valve used for defrosting",
+      "type": "enum"
+    },
+    "Relay2": {
+      "name": "dvi_relay_relay_2",
+      "description": "Heatpump magent valve for fluid injection",
+      "type": "enum"
+    },
+    "Relay3": {
+      "name": "dvi_relay_relay_3",
+      "description": "Heatpump 3-way shunt valve for central heating open",
+      "type": "enum"
+    },
+    "Relay4": {
+      "name": "dvi_relay_relay_4",
+      "description": "Heatpump 3-way shut valve for central heating close",
+      "type": "enum"
+    },
+    "Relay5": {
+      "name": "dvi_relay_relay_5",
+      "description": "Heatpump circulation pump central heating",
+      "type": "enum"
+    },
+    "Relay6": {
+      "name": "dvi_relay_relay_6",
+      "description": "Heatpump circulation pump sun heat",
+      "type": "enum"
+    },
+    "Relay7": {
+      "name": "dvi_relay_relay_7",
+      "description": "Heatpump total alarm error",
+      "type": "enum"
+    },
+    "Relay8": {
+      "name": "dvi_relay_relay_8",
+      "description": "Unknown",
+      "type": "enum"
+    },
+    "Relay9": {
+      "name": "dvi_relay_relay_9",
+      "description": "Heatpump soft start for compressor",
+      "type": "enum"
+    },
+    "Relay10": {
+      "name": "dvi_relay_relay_10",
+      "description": "Heatpump 3-way engine valve for warm water prioritization",
+      "type": "enum"
+    },
+    "Relay11": {
+      "name": "dvi_relay_relay_11",
+      "description": "Heatpump Ground source fluid",
+      "type": "enum"
+    },
+    "Relay12": {
+      "name": "dvi_relay_relay_12",
+      "description": "Heatpump realy for electric cartridge heater",
+      "type": "enum"
+    },
+    "Relay13": {
+      "name": "dvi_relay_relay_13",
+      "description": "Heatpump circulation pump hot side",
+      "type": "enum"
+    },
+    "Relay14": {
+      "name": "dvi_relay_relay_14",
+      "description": "Heatpump central heating electrical heat tracing and or draining",
+      "type": "enum"
+    }
+  },
+  "userSettings": {
+    "Centralheat.State": {
+      "name": "dvi_us_central_heat_state",
+      "description": "Central heating on / off",
+      "type": "enum"
+    },
+    "Centralheat.Curve": {
+      "name": "dvi_us_central_heat_curve",
+      "description": "Central heating heat curve",
+      "type": "gauge"
+    },
+    "Centralheat.CurveTemp": {
+      "name": "dvi_us_central_heat_curve_temp",
+      "description": "Central heating heat curve temperature",
+      "type": "gauge"
+    },
+    "Centralheat.Temp": {
+      "name": "dvi_us_central_heat_temp",
+      "description": "Central heating temperature",
+      "type": "gauge"
+    },
+    "Hotwater.State": {
+      "name": "dvi_us_hot_water_state",
+      "description": "Water heating on / off",
+      "type": "enum"
+    },
+    "Hotwater.Temp": {
+      "name": "dvi_us_hot_water_temp",
+      "description": "Hot water temperature",
+      "type": "gauge"
+    },
+    "Hotwater.Clock": {
+      "name": "dvi_us_hot_water_clock",
+      "description": "Hot water clock",
+      "type": "gauge"
+    }
+  }
+}
